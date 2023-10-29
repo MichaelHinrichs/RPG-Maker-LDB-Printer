@@ -28,7 +28,8 @@ namespace RPG_Maker_LDB_Printer
                 {
                     Data.GetInt();
                     OpenIndent();
-                    for (bool stop = false; stop == false;)
+                    bool stop = false;
+                    while ( stop == false)
                     {
                         ContinueIndent();
                         int data = Data.GetInt();
@@ -138,7 +139,8 @@ namespace RPG_Maker_LDB_Printer
                                                 ContinueIndent();
                                                 Data.GetInt();
                                                 OpenIndent();
-                                                for (bool timingStop = false; timingStop == false;)
+                                                bool timingStop = false;
+                                                while (timingStop == false)
                                                 {
                                                     ContinueIndent();
                                                     int timingData = Data.GetInt();
@@ -172,7 +174,8 @@ namespace RPG_Maker_LDB_Printer
                                                 ContinueIndent();
                                                 Data.GetInt();
                                                 OpenIndent();
-                                                for (bool frameStop = false; frameStop == false;)
+                                                bool frameStop = false;
+                                                while(frameStop == false)
                                                 {
                                                     ContinueIndent();
                                                     int frameData = Data.GetInt();
@@ -192,7 +195,8 @@ namespace RPG_Maker_LDB_Printer
                                                             ContinueIndent();
                                                             Data.GetInt();
                                                             OpenIndent();
-                                                            for (bool cellDataStop = false; cellDataStop == false;)
+                                                            bool cellDataStop = false;
+                                                            while (cellDataStop == false)
                                                             {
                                                                 ContinueIndent();
                                                                 int Cell_Data = Data.GetInt();

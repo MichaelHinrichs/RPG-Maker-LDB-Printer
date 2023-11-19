@@ -17,7 +17,9 @@
 ![Code Climate issues](https://img.shields.io/codeclimate/issues/MichaelHinrichs/RPG-Maker-LDB-Printer)
 ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/MichaelHinrichs/RPG-Maker-LDB-Printer)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/MichaelHinrichs/RPG-Maker-LDB-Printer)
-![GitHub search hit counter](https://img.shields.io/github/search/MichaelHinrichs/RPG-Maker-LDB-Printer/SPORE%20Creatures)
+![GitHub search hit counter](https://img.shields.io/github/search/MichaelHinrichs/RPG-Maker-LDB-Printer/LDB)
+![GitHub search hit counter](https://img.shields.io/github/search/MichaelHinrichs/RPG-Maker-LDB-Printer/RPG%20Maker%202000)
+![GitHub search hit counter](https://img.shields.io/github/search/MichaelHinrichs/RPG-Maker-LDB-Printer/RPG%20Maker%202003)
 ![GitHub language count](https://img.shields.io/github/languages/top/MichaelHinrichs/RPG-Maker-LDB-Printer)
 ![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/MichaelHinrichs/RPG-Maker-LDB-Printer/main)
 

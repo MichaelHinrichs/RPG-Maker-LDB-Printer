@@ -22,6 +22,7 @@
 ![GitHub search hit counter](https://img.shields.io/github/search/MichaelHinrichs/RPG-Maker-LDB-Printer/RPG%20Maker%202003)
 ![GitHub language count](https://img.shields.io/github/languages/top/MichaelHinrichs/RPG-Maker-LDB-Printer)
 ![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/MichaelHinrichs/RPG-Maker-LDB-Printer/main)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8093/badge)](https://www.bestpractices.dev/projects/8093)
 
 Print hex Data from a Lcf Data Base into a text file, seperated into indented lines.
 More readable than a hex editor.

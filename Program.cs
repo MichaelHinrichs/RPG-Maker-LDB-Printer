@@ -29,7 +29,7 @@ namespace RPG_Maker_LDB_Printer
                     Data.GetInt();
                     OpenIndent();
                     bool stop = false;
-                    while ( stop == false)
+                    while (stop == false)
                     {
                         ContinueIndent();
                         int data = Data.GetInt();
@@ -175,7 +175,7 @@ namespace RPG_Maker_LDB_Printer
                                                 Data.GetInt();
                                                 OpenIndent();
                                                 bool frameStop = false;
-                                                while(frameStop == false)
+                                                while (frameStop == false)
                                                 {
                                                     ContinueIndent();
                                                     int frameData = Data.GetInt();
@@ -221,7 +221,7 @@ namespace RPG_Maker_LDB_Printer
                                             if (AnimationFrame > 0)
                                                 CloseIndent();
                                             break;
-                                            #endregion
+                                        #endregion
                                         case (0x19, 0x16):
                                             #region Event
                                             Data.GetInt();

@@ -4,6 +4,7 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
+    ".github/pr-badge.yml",
     ".github/workflows/semgrep.yml",
     ".deepsource.toml",
     ".gitattributes",

@@ -1,0 +1,37 @@
+{
+  "projectName": "RPG-Maker-LDB-Printer",
+  "projectOwner": "MichaelHinrichs",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    ".github/workflows/semgrep.yml",
+    ".deepsource.toml",
+    ".gitattributes",
+    ".gitignore",
+    "DataTypes.cs",
+    "Formating.cs",
+    "GetEvent.cs",
+    "Hex.PNG",
+    "Program.cs",
+    "README.md",
+    "RPG Maker LDB Printer.csproj",
+    "RPG Maker LDB Printer.sln",
+    "RPG_DB.PNG",
+    "txt.PNG"
+  ],
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "linkToUsage": true,
+  "skipCi": false,
+  "contributors": [
+    {
+      "login": "all-contributors",
+      "name": "All Contributors",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46410174?v=4",
+      "profile": "https://allcontributors.org",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "commitType": "docs",

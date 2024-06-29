@@ -1,0 +1,70 @@
+- label: "PR Size"
+  message: "Large"
+  color: "red"
+  when: "$additions >= 500"
+
+- label: "PR Size"
+  message: "Medium"
+  color: "yellow"
+  when: "$additions > 200 && $additions < 500"
+
+- label: "PR Size"
+  message: "Small"
+  color: "green"
+  when: "$additions <= 200"
+
+- label: "Waiting for"
+  message: "QA"
+  color: yellow
+  when: "$payload.pull_request.body.includes('- [ ] QA')"
+
+- label: "Passed"
+  message: "QA"
+  color: green
+  when: "$payload.pull_request.body.includes('- [x] QA')"
+
+- label: "Error"
+  message: "Wrong target branch"
+  color: "red"
+  when: "$targetBranchName != 'main'"
+
+- imageUrl: "https://api.qrserver.com/v1/create-qr-code/?size=50x50&data=https://pr-$prNumber.company.com"
+  url: "https://pr-$prNumber.company.com"
+
+- message: "$author"
+  color: "green"
+
+- label: "Missing"
+  message: "Test plan"
+  color: "red"
+  when: "$payload.pull_request.body.includes('Test plan') === false"
+
+- label: "Warn"
+  message: "Unchecked Tasks"
+  color: "yellow"
+  when: "$payload.pull_request.body.includes('- [ ]')"
+
+- label: "Warn"
+  message: "Missing labels"
+  color: yellow
+  when: "$payload.pull_request.labels.length === 0"
+
+- label: "Warn"
+  message: "Description is missing"
+  color: "yellow"
+
+- message: "Outside contributor"
+  color: "#000000"
+  when: "$payload.pull_request.author_association == 'NONE'"
+
+- message: "First time contributor"
+  color: "#000000"
+  when: "$payload.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'"
+
+- message: "New GitHub user"
+  color: "#000000"
+  when: "$payload.pull_request.author_association == 'FIRST_TIMER'"
+
+- message: "Contributor"
+  color: "#000000"
+  when: "$payload.pull_request.author_association == 'CONTRIBUTOR'"

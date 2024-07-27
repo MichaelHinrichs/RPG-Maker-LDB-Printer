@@ -35,25 +35,30 @@ namespace RPG_Maker_LDB_Printer
                     ContinueIndent();
                     GetInt();
                     OpenIndent();
-                    bool Data_end = false;
-                    while (Data_end == false)
-                    {
-                        ContinueIndent();
-                        int subData = GetInt();
-                        if (subData == 0x00)
-                            Data_end = true;
-                        else if (PartID == 0x1D & data == 0x0A & subData == 0x01 | PartID == 0x20 & data == 0x0A & subData == 0x01 | PartID == 0x20 & data == 0x0A & subData == 0x02 | PartID == 0x20 & data == 0x0B & subData == 0x01 | PartID == 0x20 & data == 0x0B & subData == 0x02)
-                            GetString();
-                        else
-                            GetBytes();
-                    }
+                    ReadSubdata(PartID, data);
                     CloseIndent();
                 }
                 CloseIndent();
             }
         }
 
-        public static int GetInt()
+        public static void ReadSubdata(byte PartID, int data)
+        {
+            bool Data_end = false;
+            while (Data_end == false)
+            {
+                ContinueIndent();
+                int subData = GetInt();
+                if (subData == 0x00)
+                    Data_end = true;
+                else if (PartID == 0x1D & data == 0x0A & subData == 0x01 | PartID == 0x20 & data == 0x0A & subData == 0x01 | PartID == 0x20 & data == 0x0A & subData == 0x02 | PartID == 0x20 & data == 0x0B & subData == 0x01 | PartID == 0x20 & data == 0x0B & subData == 0x02)
+                    GetString();
+                else
+                    GetBytes();
+            }
+        }
+
+    public static int GetInt()
         {
             return Convert7BitHex(0);
         }

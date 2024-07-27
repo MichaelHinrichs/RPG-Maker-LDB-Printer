@@ -34,18 +34,10 @@ namespace RPG_Maker_LDB_Printer
                     break;
                 case 12010://DD 6A
                 case 13310://E7 7E
-                    while (stop == false)
-                    {
-                        GetEvent();
-                    }
-                    stop = false;
+                    CheckEnd();
                     if (gotInts[5] == 1)
                     {
-                        while (stop == false)
-                        {
-                            GetEvent();
-                        }
-                        stop = false;
+                        CheckEnd();
                     }
                     GetEvent();
                     break;
@@ -53,17 +45,9 @@ namespace RPG_Maker_LDB_Printer
                     if (gotInts[3] == 2 || gotInts[4] == 1)
                     {
                         GetEvent();
-                        while (stop == false)
-                        {
-                            GetEvent();
-                        }
-                        stop = false;
+                        CheckEnd();
                         GetEvent();
-                        while (stop == false)
-                        {
-                            GetEvent();
-                        }
-                        stop = false;
+                        CheckEnd();
                         GetEvent();
                     }
                     break;
@@ -73,17 +57,9 @@ namespace RPG_Maker_LDB_Printer
                     {
                         stop = false;
                         GetEvent();
-                        while (stop == false)
-                        {
-                            GetEvent();
-                        }
-                        stop = false;
+                        CheckEnd();
                         GetEvent();
-                        while (stop == false)
-                        {
-                            GetEvent();
-                        }
-                        stop = false;
+                        CheckEnd();
                         GetEvent();
                     }
                     break;
@@ -98,6 +74,15 @@ namespace RPG_Maker_LDB_Printer
             }
             Formating.CloseIndent();
             Formating.CloseIndent();
+        }
+
+        static void CheckEnd()
+        {
+            while (stop == false)
+            {
+                GetEvent();
+            }
+            stop = false;
         }
     }
 }

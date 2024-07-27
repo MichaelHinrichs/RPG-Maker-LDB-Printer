@@ -35,7 +35,8 @@ namespace RPG_Maker_LDB_Printer
                     ContinueIndent();
                     GetInt();
                     OpenIndent();
-                    for (bool Data_end = false; Data_end == false;)
+                    bool Data_end = false;
+                    while (Data_end == false)
                     {
                         ContinueIndent();
                         int subData = GetInt();

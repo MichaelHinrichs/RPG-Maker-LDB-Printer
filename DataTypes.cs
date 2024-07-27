@@ -58,7 +58,7 @@ namespace RPG_Maker_LDB_Printer
             }
         }
 
-    public static int GetInt()
+        public static int GetInt()
         {
             return Convert7BitHex(0);
         }
